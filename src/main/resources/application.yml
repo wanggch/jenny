@@ -1,0 +1,14 @@
+server:
+  port: 28096
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jenny?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: ENC(gVom118l917bhblhvMu+ow==)
+    password: ENC(6Vx42Si5xhl0AMLZrqFayt26qyKTOAlw)
+mybatis:
+  mapper-locations: classpath:/mybatis/*/*.xml
+  type-aliases-package: my.jenny.*.entity.po
+  config-location: classpath:mybatis-config.xml
+logging:
+  level:
+    my.jenny: DEBUG
