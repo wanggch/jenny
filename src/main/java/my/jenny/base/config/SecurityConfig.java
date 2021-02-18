@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 /**
-* @description 
+* @description 安全配置
 * @author wanggc
-* @date 2020/11/6 11:39 上午
+* @date 2020/11/6 2:36 下午
 */
 @Configuration
 public class SecurityConfig {

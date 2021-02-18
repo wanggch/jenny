@@ -14,17 +14,17 @@ public class Note extends BasePO {
     /**
      * 笔记ID
      */
-    private Long noteId;
+    private String id;
     /**
      * 笔记名称
      */
-    private String noteName;
+    private String name;
     /**
      * 笔记发布地址
      */
-    private String noteUrl;
+    private String url;
     /**
      * 笔记说明
      */
-    private String noteMemo;
+    private String memo;
 }

@@ -8,7 +8,7 @@
         commission, stamp_duty, transfer_fee, create_time
     </sql>
 
-    <select id="findAllStockRecords" resultType="StockRecord">
+    <select id="findAllStockRecords" resultType="my.jenny.finance.entity.po.StockRecord">
         SELECT
             <include refid="stockRecordSql" />
         FROM stock_record
