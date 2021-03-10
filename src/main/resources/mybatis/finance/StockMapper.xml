@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="my.jenny.finance.dao.StockDao">
+
+    <insert id="insert" parameterType="Stock">
+        insert into t_stock(id, stock_code, stock_name, create_time)
+        values(#{id}, #{stockCode}, #{stockName}, #{createTime})
+    </insert>
+
+    <select id="query" parameterType="StockParam" resultType="Stock">
+        select id, stock_code, stock_name, create_time from t_stock
+        <where>
+            <if test="stockCode != null and stockCode != ''">
+                and stock_code = #{stockCode}
+            </if>
+            <if test="stockName != null and stockName != ''">
+                and stock_name = #{stockName}
+            </if>
+        </where>
+    </select>
+
+</mapper>

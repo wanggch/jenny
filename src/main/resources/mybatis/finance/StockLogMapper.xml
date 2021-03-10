@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="my.jenny.finance.dao.StockLogDao">
+
+    <insert id="insert" parameterType="StockLog">
+        insert into t_stock_log(id, hold_date, stock_code, stock_name, market_value, pl, pl_percent, position, available_num, cost, current_price, create_time)
+        values(#{id}, #{holdDate}, #{stockCode}, #{stockName}, #{marketValue}, #{pl}, #{plPercent}, #{position}, #{availableNum}, #{cost}, #{currentPrice}, #{createTime})
+    </insert>
+
+</mapper>

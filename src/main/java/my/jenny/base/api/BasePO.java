@@ -11,5 +11,13 @@ public abstract class BasePO extends BaseEntity {
     /**
      * 创建时间
      */
-    Date createTime;
+    protected Date createTime;
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getCreateTime() {
+        return this.createTime;
+    }
 }

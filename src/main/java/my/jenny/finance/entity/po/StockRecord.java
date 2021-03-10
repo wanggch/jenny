@@ -34,14 +34,14 @@ public class StockRecord extends BasePO {
     private String stockName;
 
     /**
-     * 价格
+     * 价格（单价）
      */
     private BigDecimal price;
 
     /**
      * 数量
      */
-    private Integer amount;
+    private Integer num;
 
     /**
      * 成交金额

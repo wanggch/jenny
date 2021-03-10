@@ -1,6 +1,5 @@
 package my.jenny.finance.service;
 
-import lombok.RequiredArgsConstructor;
 import my.jenny.finance.dao.StockRecordDao;
 import my.jenny.finance.entity.po.StockRecord;
 import org.springframework.stereotype.Service;
@@ -14,7 +13,6 @@ import java.util.List;
 * @date 2020/11/5 8:00 下午
 */
 @Service
-@RequiredArgsConstructor
 public class StockRecordService {
 
     @Resource
