@@ -57,4 +57,9 @@ public class StockService {
         List<Stock> resultList = stockDao.query(param);
         return resultList.size() > 0;
     }
+
+    public List<Stock> all() {
+        StockParam param = new StockParam();
+        return stockDao.query(param);
+    }
 }
