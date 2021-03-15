@@ -2,6 +2,7 @@ package my.jenny.finance.service;
 
 import lombok.extern.slf4j.Slf4j;
 import my.jenny.finance.dao.StockLogDao;
+import my.jenny.finance.entity.dto.StockLogDTO;
 import my.jenny.finance.entity.po.Stock;
 import my.jenny.finance.entity.po.StockLog;
 import my.jenny.finance.entity.query.StockLogParam;
@@ -35,6 +36,10 @@ public class StockLogService {
         param.setHoldDate(holdDate);
         List<StockLog> list = stockLogDao.query(param);
         return list.size() > 0;
+    }
+
+    public List<StockLog> query(StockLogParam param) {
+        return stockLogDao.query(param);
     }
 
 }
